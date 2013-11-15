@@ -62,13 +62,17 @@ static NSArray *moodsArray = nil;
     } else if ([mood caseInsensitiveCompare:@"hopeful"] == NSOrderedSame) {
         return [UIColor colorWithRed:212.0/255.0 green:160.0/255.0 blue:0.0/255.0 alpha:1];
     } else if ([mood caseInsensitiveCompare:@"excited"] == NSOrderedSame) {
-        return [UIColor colorWithRed:201.0/255.0 green:131.0/255.0 blue:16.0/255.0 alpha:1];
+        return [UIColor colorWithRed:230.0/255.0 green:0 blue:231/255.0 alpha:1];
     } else if ([mood caseInsensitiveCompare:@"sexy"] == NSOrderedSame) {
         return [UIColor colorWithRed:190.0/255.0 green:18.0/255.0 blue:31.0/255.0 alpha:1];
     } else if ([mood caseInsensitiveCompare:@"angry"] == NSOrderedSame) {
-        return [UIColor colorWithRed:78.0/255.0 green:16.0/255.0 blue:20.0/255.0 alpha:1];
+        return [UIColor colorWithRed:74.0/255.0 green:0 blue:255.0 alpha:1];
+    } else if ([mood caseInsensitiveCompare:@"guilty"] == NSOrderedSame) {
+        return [UIColor colorWithRed:234.0/255.0 green:110.0/255.0 blue:125.0/255.0 alpha:1];
+    } else if ([mood caseInsensitiveCompare:@"creative"] == NSOrderedSame) {
+        return [UIColor colorWithRed:231.0/255.0 green:95.0/255.0 blue:0 alpha:1];
     } else if ([mood caseInsensitiveCompare:@"buzzed"] == NSOrderedSame) {
-        return [UIColor colorWithRed:177.0/255.0 green:60.0/255.0 blue:35.0/255.0 alpha:1];
+        return [UIColor colorWithRed:228.0/255.0 green:0 blue:120.0/255.0 alpha:1];
     } else if ([mood caseInsensitiveCompare:@"whimsical"] == NSOrderedSame) {
         return [UIColor colorWithRed:58.0/255.0 green:11.0/255.0 blue:59.0/255.0 alpha:1];
     } else if ([mood caseInsensitiveCompare:@"grateful"] == NSOrderedSame) {
@@ -82,57 +86,62 @@ static NSArray *moodsArray = nil;
     } else if ([mood caseInsensitiveCompare:@"naughty"] == NSOrderedSame) {
         return [UIColor colorWithRed:119.0/255.0 green:4.0/255.0 blue:74.0/255.0 alpha:1];
     } else if ([mood caseInsensitiveCompare:@"silly"] == NSOrderedSame) {
-        return [UIColor colorWithRed:198.0/255.0 green:214.0/255.0 blue:50.0/255.0 alpha:1];
+        return [UIColor colorWithRed:103.0/255.0 green:255.0/255.0 blue:0 alpha:1];
     } else if ([mood caseInsensitiveCompare:@"active"] == NSOrderedSame) {
-        return [UIColor colorWithRed:144.0/255.0 green:192.0/255.0 blue:93.0/255.0 alpha:1];
+        return [UIColor colorWithRed:232.0/255.0 green:0 blue:255.0/255.0 alpha:1];
     } else if ([mood caseInsensitiveCompare:@"curious"] == NSOrderedSame) {
         return [UIColor colorWithRed:55.0/255.0 green:151.0/255.0 blue:69.0/255.0 alpha:1];
     } else if ([mood caseInsensitiveCompare:@"athletic"] == NSOrderedSame) {
         return [UIColor colorWithRed:88.0/255.0 green:133.0/255.0 blue:59.0/255.0 alpha:1];
     } else if ([mood caseInsensitiveCompare:@"frustrated"] == NSOrderedSame) {
-        return [UIColor colorWithRed:60.0/255.0 green:70.0/255.0 blue:100.0/255.0 alpha:1];
+        return [UIColor colorWithRed:233.0/255.0 green:108.0/255.0 blue:36.0/255.0 alpha:1];
     } else if ([mood caseInsensitiveCompare:@"nostalgic"] == NSOrderedSame) {
-        return [UIColor colorWithRed:50.0/255.0 green:112.0/255.0 blue:137.0/255.0 alpha:1];
+        return [UIColor colorWithRed:235.0/255.0 green:132.0/255.0 blue:49.0/255.0 alpha:1];
     } else if ([mood caseInsensitiveCompare:@"pityparty"] == NSOrderedSame) {
         return [UIColor colorWithRed:23.0/255.0 green:39.0/255.0 blue:87.0/255.0 alpha:1];
     } else if ([mood caseInsensitiveCompare:@"social"] == NSOrderedSame) {
-        return [UIColor colorWithRed:41.0/255.0 green:87.0/255.0 blue:166.0/255.0 alpha:1];
+        return [UIColor colorWithRed:74.0/255.0 green:0 blue:255.0/255.0 alpha:1];
     } else if ([mood caseInsensitiveCompare:@"adventurous"] == NSOrderedSame) {
         return [UIColor colorWithRed:81.0/255.0 green:61.0/255.0 blue:142.0/255.0 alpha:1];
     } else if ([mood caseInsensitiveCompare:@"centered"] == NSOrderedSame) {
-        return [UIColor colorWithRed:84.0/255.0 green:136.0/255.0 blue:200.0/255.0 alpha:1];
+        return [UIColor colorWithRed:236.0/255.0 green:255.0/255.0 blue:11.0/255.0 alpha:1];
     } else if ([mood caseInsensitiveCompare:@"spiritual"] == NSOrderedSame) {
-        return [UIColor colorWithRed:177.0/255.0 green:203.0/255.0 blue:228.0/255.0 alpha:1];
+        return [UIColor colorWithRed:177.0/255.0 green:0 blue:255.0/255.0 alpha:1];
     } else if ([mood caseInsensitiveCompare:@"quiet"] == NSOrderedSame) {
         return [UIColor colorWithRed:166.0/255.0 green:200.0/255.0 blue:171.0/255.0 alpha:1];
     } else if ([mood caseInsensitiveCompare:@"ungrounded"] == NSOrderedSame) {
-        return [UIColor colorWithRed:90.0/255.0 green:102.0/255.0 blue:81.0/255.0 alpha:1];
+        return [UIColor colorWithRed:122.0/255.0 green:0 blue:255.0/255.0 alpha:1];
     } else if ([mood caseInsensitiveCompare:@"tired"] == NSOrderedSame) {
-        return [UIColor colorWithRed:115.0/255.0 green:108.0/255.0 blue:114.0/255.0 alpha:1];
+        return [UIColor colorWithRed:220.0/255.0 green:0 blue:216.0/255.0 alpha:1];
     } else if ([mood caseInsensitiveCompare:@"stressed"] == NSOrderedSame) {
-        return [UIColor colorWithRed:42.0/255.0 green:42.0/255.0 blue:44.0/255.0 alpha:1];
+        return [UIColor colorWithRed:100.0/255.0 green:0 blue:255.0/255.0 alpha:1];
     }
     
     // TODO : find colors!!
     else if ([mood caseInsensitiveCompare:@"anxious"] == NSOrderedSame) {
-        return [UIColor colorWithRed:42.0/255.0 green:42.0/255.0 blue:44.0/255.0 alpha:1];
+        return [UIColor colorWithRed:74.0/255.0 green:0 blue:255.0/255.0 alpha:1];
     } else if ([mood caseInsensitiveCompare:@"confident"] == NSOrderedSame) {
-        return [UIColor colorWithRed:42.0/255.0 green:42.0/255.0 blue:44.0/255.0 alpha:1];
+        return [UIColor colorWithRed:79.0/255.0 green:0 blue:255.0/255.0 alpha:1];
     } else if ([mood caseInsensitiveCompare:@"defeated"] == NSOrderedSame) {
         return [UIColor colorWithRed:42.0/255.0 green:42.0/255.0 blue:44.0/255.0 alpha:1];
     } else if ([mood caseInsensitiveCompare:@"hungry"] == NSOrderedSame) {
-        return [UIColor colorWithRed:42.0/255.0 green:42.0/255.0 blue:44.0/255.0 alpha:1];
+        return [UIColor colorWithRed:74.0/255.0 green:0 blue:255.0/255.0 alpha:1];
     } else if ([mood caseInsensitiveCompare:@"jealous"] == NSOrderedSame) {
-        return [UIColor colorWithRed:42.0/255.0 green:42.0/255.0 blue:44.0/255.0 alpha:1];
+        return [UIColor colorWithRed:228.0/255.0 green:8.0/255.0 blue:102.0/255.0 alpha:1];
     } else if ([mood caseInsensitiveCompare:@"lonely"] == NSOrderedSame) {
-        return [UIColor colorWithRed:42.0/255.0 green:42.0/255.0 blue:44.0/255.0 alpha:1];
+        return [UIColor colorWithRed:228.0/255.0 green:23.0/255.0 blue:0 alpha:1];
     } else if ([mood caseInsensitiveCompare:@"paranoid"] == NSOrderedSame) {
         return [UIColor colorWithRed:42.0/255.0 green:42.0/255.0 blue:44.0/255.0 alpha:1];
     } else if ([mood caseInsensitiveCompare:@"scared"] == NSOrderedSame) {
-        return [UIColor colorWithRed:42.0/255.0 green:42.0/255.0 blue:44.0/255.0 alpha:1];
+        return [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1];
     } else if ([mood caseInsensitiveCompare:@"sick"] == NSOrderedSame) {
-        return [UIColor colorWithRed:42.0/255.0 green:42.0/255.0 blue:44.0/255.0 alpha:1];
+        return [UIColor colorWithRed:103.0/255.0 green:0 blue:255.0/255.0 alpha:1];
+    } else if ([mood caseInsensitiveCompare:@"disappointed"] == NSOrderedSame) {
+        return [UIColor colorWithRed:228.0/255.0 green:23.0/255.0 blue:0 alpha:1];
+    } else if ([mood caseInsensitiveCompare:@"sad"] == NSOrderedSame) {
+        return [UIColor colorWithRed:228.0/255.0 green:19.0/255.0 blue:53.0/255.0 alpha:1];
     }
+    
     
     
     else {

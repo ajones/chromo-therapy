@@ -53,10 +53,10 @@
     //self.navigationController = [[UINavigationController alloc] initWithRootViewController:mainViewController];
     
     MoodPanelViewController *mainViewController = [[MoodPanelViewController alloc] initWithNibName:@"MoodPanelView" bundle:nil];
-    self.navigationController = [[UINavigationController alloc] initWithRootViewController:mainViewController];
+    //self.navigationController = [[UINavigationController alloc] initWithRootViewController:mainViewController];
     
     
-    self.window.rootViewController = self.navigationController;
+    self.window.rootViewController = mainViewController;
     [self.window makeKeyAndVisible];
     
     PHNotificationManager *notificationManager = [PHNotificationManager defaultManager];
